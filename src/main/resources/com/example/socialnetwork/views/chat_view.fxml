@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.37" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.MainChatController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="219.0">
+         <children>
+            <TableView fx:id="friendTable" layoutX="-1.0" layoutY="-2.0" prefHeight="398.0" prefWidth="175.0">
+              <columns>
+                <TableColumn fx:id="friendUsernameColumn" prefWidth="174.39999998807906" text="Prieteni" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+
+      <AnchorPane fx:id="chatPane" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="505.0" visible="false">
+          <children>
+              <ListView fx:id="chat" layoutY="14.0" prefHeight="322.0" prefWidth="206.0" />
+              <Button fx:id="sendButton" layoutX="200" layoutY="336.0" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="26.0" prefWidth="50.0" text="Send" />
+              <TextField fx:id="messageField" layoutY="336.0" prefHeight="26.0" prefWidth="206.0" promptText="Scrieti un mesaj" />
+
+
+          </children>
+      </AnchorPane>
+
+  </items>
+</SplitPane>

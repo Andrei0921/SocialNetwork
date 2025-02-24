@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.NotificationController">
+    <VBox layoutX="32.0" layoutY="96.0" prefHeight="210.0" prefWidth="351.0">
+        <children>
+            <TableView fx:id="requestsTable" prefHeight="184.0" prefWidth="303.0">
+                <columns>
+                    <TableColumn fx:id="requestUsernameColumn" prefWidth="120.4000244140625" text="Username" />
+                    <TableColumn fx:id="requestDateColumn" prefWidth="123.19998168945312" text="Data trimiterii" />
+                    <TableColumn fx:id="requestStatusColumn" prefWidth="108.79998779296875" text="Status" />
+                </columns>
+            </TableView>
+            <HBox prefHeight="46.0" prefWidth="360.0">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#handleAcceptRequest" prefHeight="28.0" prefWidth="68.0" text="Accepta" />
+                    <Button fx:id="rejbutton" mnemonicParsing="false" onAction="#handleRejectRequest" prefHeight="28.0" prefWidth="68.0" text="Respinge" />
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+    <Label layoutX="32.0" layoutY="29.0" prefHeight="43.0" prefWidth="160.0" text="Cereri de prietenie">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+
+</AnchorPane>

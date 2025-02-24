@@ -1,0 +1,49 @@
+
+root {
+    -fx-background-color: #f9f9f9;
+    -fx-font-family: "Arial";
+}
+
+
+
+Label[text="Social App"] {
+    -fx-font-size: 27px;
+    -fx-text-fill: #10e368;
+    -fx-font-family: "Centaur";
+}
+
+
+TextField, PasswordField {
+    -fx-pref-height: 35px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+TextField:focused, PasswordField:focused {
+    -fx-border-color: #10e368;
+}
+
+#btnlogin{
+    -fx-background-color: #1df404;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+#btnlogin:hover {
+    -fx-background-color: #0cc85c;
+}
+
+
+Hyperlink {
+    -fx-font-size: 14px;
+    -fx-text-fill: #100cea;
+}
+
+Hyperlink:hover {
+    -fx-underline: true;
+}

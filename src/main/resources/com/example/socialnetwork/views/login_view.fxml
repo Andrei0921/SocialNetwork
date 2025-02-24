@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.LoginController"
+      stylesheets="@../styles/login-style.css">
+   <children>
+      <Label layoutX="145.0" layoutY="30.0" prefHeight="42.0" prefWidth="110.0" text="Social App" textAlignment="CENTER" textFill="#10e368">
+         <font>
+            <Font name="Centaur" size="27.0" />
+         </font></Label>
+      <Hyperlink fx:id="signuplink" layoutX="153.0" layoutY="262.0" onAction="#handleSignup" text="Sign Up here" textFill="#100cea" />
+      <VBox layoutX="39.0" layoutY="111.0" prefHeight="77.0" prefWidth="322.0">
+         <children>
+            <TextField fx:id="txtusername" promptText="Username" />
+            <PasswordField fx:id="txtpassword" promptText="Password" />
+            <Button fx:id="btnlogin" mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="327.0" text=" Log In" textFill="#181818" />
+         </children>
+      </VBox>
+      <Label layoutX="128.0" layoutY="246.0" prefHeight="18.0" prefWidth="126.0" text="Don't have an account?" />
+   </children>
+</AnchorPane>

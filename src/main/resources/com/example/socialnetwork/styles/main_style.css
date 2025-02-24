@@ -1,0 +1,38 @@
+
+
+
+
+Button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-transition: 0.3s;
+}
+
+Button:hover {
+    -fx-background-color: #2980b9;
+}
+
+#logoutButton {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+}
+
+#logoutButton:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Stil pentru separator */
+Separator {
+    -fx-background-color: #b310d7;
+}
+
+
+StackPane {
+    -fx-background-color: white;
+}
+
+#defaultLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
